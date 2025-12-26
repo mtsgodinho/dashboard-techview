@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechView Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              techBlue: {
+                DEFAULT: '#00C8FF',
+                dark: '#0AAFFF',
+                glow: 'rgba(0, 200, 255, 0.4)',
+              },
+              deep: {
+                900: '#071420',
+                800: '#0B1C2D',
+                700: '#112235',
+              },
+              neon: '#00C8FF',
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              tech: ['Space Grotesk', 'sans-serif'],
+            },
+            boxShadow: {
+              'glow': '0 0 15px rgba(0, 200, 255, 0.3)',
+              'glow-lg': '0 0 30px rgba(0, 200, 255, 0.5)',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #000000;
+        color: #ffffff;
+        margin: 0;
+        overflow-x: hidden;
+      }
+      .glass {
+        background: rgba(11, 28, 45, 0.6);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(0, 200, 255, 0.1);
+      }
+      .tech-border {
+        border: 1px solid rgba(0, 200, 255, 0.2);
+      }
+      .neon-text {
+        color: #00C8FF;
+        text-shadow: 0 0 10px rgba(0, 200, 255, 0.5);
+      }
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #071420;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #00C8FF33;
+        border-radius: 3px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #00C8FF;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "recharts": "https://esm.sh/recharts@^3.6.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

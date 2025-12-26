@@ -1,0 +1,8 @@
+{
+  "name": "TechView Dashboard",
+  "description": "A premium SaaS dashboard for TechView with futuristic dark theme, sales tracking, subscription management, and CRUD for plans.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
